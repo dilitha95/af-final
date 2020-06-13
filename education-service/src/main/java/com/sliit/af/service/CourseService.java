@@ -31,4 +31,8 @@ public class CourseService {
 		return courseMaterialRepository.findByCourseNo(courseNo);
 	}
 
+	public Course findByCourseNo(String courseNo) {
+		return courseRepository.findByCourseNo(courseNo);
+	}
+
 }

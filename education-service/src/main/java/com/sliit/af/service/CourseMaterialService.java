@@ -14,12 +14,12 @@ public class CourseMaterialService {
 	@Autowired
 	private CourseMaterialRepository courseMaterialRepository;
 
-	public List<CourseMaterial> findAll() {
-		return courseMaterialRepository.findAll();
-	}
-
 	public CourseMaterial save(CourseMaterial courseMaterial) {
 		return courseMaterialRepository.save(courseMaterial);
+	}
+
+	public List<CourseMaterial> findByCourseNo(String courseNo) {
+		return courseMaterialRepository.findByCourseNo(courseNo);
 	}
 
 }
